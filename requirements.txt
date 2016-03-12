@@ -1,0 +1,4 @@
+multi-key-dict==2.0.3
+pbr==1.8.1
+python-jenkins==0.4.12
+six==1.10.0
