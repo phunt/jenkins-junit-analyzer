@@ -1,0 +1,13 @@
+Having a local jenkins makes things easier re testing/exploration
+
+$ docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v ~/dev/jenkins_home:/var/jenkins_home jenkins
+
+view jenkins logs
+
+$ docker logs -f jenkins
+
+Open Jenkins in a browser
+
+http://192.168.99.100:8080/
+
+Simulated success/failures with JUnit
