@@ -16,3 +16,26 @@ Currently will:
 Tools:
 * localize_job_results.py - localize the jenkins junit results locally
 * generate_job_histogram.py - print various histograms for a job based on localized information
+
+
+Schema:
+
+SQLite is used as a persistent store. It currently supports a single Jenkins server (the schema assumes jobs are from a single jenkins server).
+
+Relationship (parent to child) is: job->build->test
+
+Job Table:
+id int
+jobname string
+
+Build Table:
+id int
+jobid int
+buildnumber int
+result string (pass/fail)
+
+Test Table:
+id int
+buildid id
+test string
+result string (pass/fail)
