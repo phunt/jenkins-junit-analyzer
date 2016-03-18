@@ -14,8 +14,8 @@ Currently will:
 
 
 Tools:
-* localize_job_results.py - localize the jenkins junit results locally
-* generate_job_histogram.py - print various histograms for a job based on localized information
+* localize_job_results - localize the jenkins junit results locally
+* generate_job_histogram - print various histograms for a job based on localized information
 
 
 Schema:
@@ -37,5 +37,5 @@ result string (pass/fail)
 Test Table:
 id int
 buildid id
-test string
+testname string
 result string (pass/fail)
